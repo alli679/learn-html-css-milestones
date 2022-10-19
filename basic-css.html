@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic CSS</title>
+
+  <style>
+    body {
+      background-image: url("https://c.tadst.com/gfx/600x337/rainbow.jpg?1")
+    }
+    
+
+    #bold {
+      font-weight: bold;
+    }
+
+    img {
+      width: 50%;
+      height: 50%;
+    }
+
+    .center {
+      text-align: center;
+      background-color: orange;
+    }
+
+    div p {
+      font-size: italics;
+    }
+
+    div > p {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="center">
+    <p>The paragraph tags above the image will be center-aligned.</p>
+    <ol>
+      <li><p>The paragraph tags in a list...</p></li>
+      <li><p id="bold">...won't be blue because they're not directly nested in div tags (This one is bold though due to the id selector)</p></li>
+    </ol>
+    <p>This paragraph will be blue.</p>
+  </div>
+
+  <div class="image">
+    <img src="assets/img/css-selector.webp">
+  </div>
+
+  <div>
+    <p>This paragraph is in italics.</p>
+    <ul>
+      <li><p>This one will be too because font-size: italics is in a descendant combinator</p></li>
+    </ul>
+  </div>
+
+  <p>This paragraph isn't in italics.</p>
+</body>
+</html>
