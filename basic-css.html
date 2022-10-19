@@ -4,10 +4,20 @@
   <title>Basic CSS</title>
 
   <style>
+    *{
+      margin: 5px, 4px;
+      letter-spacing: 2px;
+      line-height: 5px;
+    }
+
     body {
       background-image: url("https://c.tadst.com/gfx/600x337/rainbow.jpg?1")
     }
 
+    #lower {
+      text-transformation: lowercase;
+      font-size: 12px;
+    }
 
     #bold {
       font-weight: bold;
@@ -16,11 +26,18 @@
     img {
       width: 50%;
       height: 50%;
+      border: dashed red;
+    }
+
+    .square-list {
+      list-style-type: square;
     }
 
     .center {
       text-align: center;
       background-color: orange;
+      font-family: sans-serif;
+      padding: 3px 4px;
     }
 
     div p {
@@ -35,11 +52,11 @@
 
 <body>
   <div class="center">
-    <p>The paragraph tags above the image will be center-aligned.</p>
-    <ol>
+    <p>The paragraph tags above the image will be center-aligned and in sans-serif.</p>
+    <ul class="square-list">
       <li><p>The paragraph tags in a list...</p></li>
       <li><p id="bold">...won't be blue because they're not directly nested in div tags (This one is bold though due to the id selector)</p></li>
-    </ol>
+    </ul>
     <p>This paragraph will be blue.</p>
   </div>
 
@@ -49,8 +66,9 @@
 
   <div>
     <p>This paragraph is in italics.</p>
-    <ul>
+    <ul class="square-list">
       <li><p>This one will be too because font-style: italic is in a descendant combinator</p></li>
+      <li><p id="lower">This one will be all lowercase and have a 12px font size because of its id</p></li>
     </ul>
   </div>
 
