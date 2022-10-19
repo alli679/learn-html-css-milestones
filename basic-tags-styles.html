@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Tags</title>
+
+  <style>
+    .border {
+      border: solid green;
+    }
+
+    section #text-and-image > h2 {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Header 1</h1>
+
+  <section class="border" id="text-and-image">
+    <h2>Paragraph, blockquote, preformat, anchor, and image</h2>
+
+    <h3 class="red">The paragraph tags with inline text styling</h3>
+    <p>The paragraph tag</p>
+    <p><b>The paragraph tag and bold tags</b></p>
+    <p><strong>The paragraph tag and strong tags</strong></p>
+    <p><i>The paragraph tag and italic tags</i></p>
+    <p><em>The paragraph tag and emphasis tags</em></p>
+    <p class="red">The paragraph tag and <code>code</code> tags</p>
+
+    <br>
+
+    <h3>The blockquote tag</h3>
+    <blockquote class="red" cite="https://www.homeandlearn.co.uk/WD/wds6p4.html">
+      The easiest layout to implement with CSS is a one column layout. This is just a series of boxes stacked one on top of the other. We'll have a Header area, a horizontal navigation menu, an area for the contents of the page, and finally a Footer.
+    </blockquote>
+
+    <br>
+
+    <h3>The preformatted tag</h3>
+    <pre>
+      __      __
+      O        O
+          \
+          _\
+    ______________
+    \            /
+     \          /
+      \________/
+    </pre>
+
+    <br>
+
+    <h3>The anchor tag</h3>
+    <a href="https://www.homeandlearn.co.uk/WD/wds6p4.html">Link to an article about one-column layouts</a>
+
+    <br>
+
+    <h3 class="red">The image tag</h3>
+    <img src="./assets/img/one-col-layout-code.gif">
+  </section>
+
+  <br>
+  <br>
+
+  <section id="list">
+    <h2>Unordered and Ordered lists</h2>
+    <ul>
+      <li class="red">Unordered list item 1</li>
+      <li>Unordered list item 2</li>
+      <ul>
+        <li>Nested unordered list item 1</li>
+      </ul>
+    </ul>
+
+    <br>
+
+    <ul>
+      <li>Unordered list item 3</li>
+      <ul>
+        <li>Nested unordered list item 2</li>
+        <li><a href="https://www.google.com/">Nested unordered anchor</a></li>
+      </ul>
+    </ul>
+
+    <br>
+
+    <ol>
+      <li>Unnested ordered list item 1</li>
+      <ol>
+        <li><p class="red">Nested ordered paragraph</p></li>
+        <li><img src="./assets/img/nested-list-two.png" width="128" height="59"></li>
+      </ol>
+      <li><p>Unnested ordered list paragraph</p></li>
+    </ol>
+
+    <br>
+
+    <ol>
+      <li><p>Unnested ordered paragraph</p></li>
+      <ol>
+        <li><p>Nested x1</p></li>
+        <ol>
+          <li><p class="red">Nested x2</p></li>
+        </ol>
+      </ol>
+    </ol>
+  </section>
+
+  <br>
+  <br>
+
+  <section class="border" id="table">
+    <h2>Table</h2>
+
+    <table>
+      <tr>
+        <th>Table Heading 1</th>
+        <th>Table Heading 2</th>
+        <th>Table Heading 3</th>
+      </tr>
+
+      <tr>
+        <td>1, 1</td>
+        <td>1, 2</td>
+        <td>1, 3</td>
+      </tr>
+
+      <tr>
+        <td>2, 1</td>
+        <td>2, 2</td>
+        <td>2, 3</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table>
+      <tr>
+        <th>Table Heading 1</th>
+        <th>Table Heading 2</th>
+        <th>Table Heading 3</th>
+        <th>Table Heading 4</th>
+      </tr>
+
+      <tr>
+        <td>1, 1</td>
+        <td>1, 2</td>
+        <td>1, 3</td>
+        <td>1, 4</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <table>
+      <tr>
+        <th>Table Heading 1</th>
+      </tr>
+
+      <tr>
+        <td>1, 1</td>
+      </tr>
+    </table>
+  </section>
+</body>
+</html>
